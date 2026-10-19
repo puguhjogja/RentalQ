@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rencana Anggaran Belanja Proyek</title>
+    <title>Rencana Anggaran Belanja</title>
     <!-- Library CDN stabil untuk GitHub Pages -->
     <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -126,7 +126,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Rencana Anggaran Belanja (RAB) Proyek</h1>
+        <h1>Rencana Anggaran Belanja</h1>
         
         <div class="project-info no-print">
             <div class="form-group">
@@ -262,7 +262,7 @@
         function unduhExcel() {
             const d = ambilData();
             const data = [
-                ['RENCANA ANGGARAN BELANJA PROYEK'],
+                ['Rencana Anggaran Belanja'],
                 [],
                 ['Nama Proyek', d.namaProyek],
                 ['Lokasi', d.lokasiProyek],
@@ -293,7 +293,7 @@
             el.style.padding = '30px';
             el.style.fontFamily = 'Arial, sans-serif';
             el.innerHTML = `
-                <h1 style="text-align:center; border-bottom:2px solid #333; padding-bottom:10px;">RENCANA ANGGARAN BELANJA PROYEK</h1>
+                <h1 style="text-align:center; border-bottom:2px solid #333; padding-bottom:10px;">Rencana Anggaran Belanja</h1>
                 <div style="margin:20px 0;">
                     <p><strong>Nama Proyek:</strong> ${d.namaProyek}</p>
                     <p><strong>Lokasi:</strong> ${d.lokasiProyek}</p>
